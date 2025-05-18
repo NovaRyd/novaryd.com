@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaRyd | Sustainability-First Mobility</title>
+    <meta name="description" content="NovaRyd - Reimagining sustainable mobility for a greener future">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'midnight-blue': '#0A2342',
+                        'electric-teal': '#00C9B1',
+                        'ivory': '#FCFCF9',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FCFCF9;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="text-midnight-blue">
+    <!-- Navigation -->
+    <nav class="bg-ivory border-b border-gray-100 py-4 px-6 md:px-12 lg:px-16">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <!-- Logo SVG -->
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-3">
+                    <path d="M20 0C8.954 0 0 8.954 0 20C0 31.046 8.954 40 20 40C31.046 40 40 31.046 40 20C40 8.954 31.046 0 20 0ZM20 7.5C26.904 7.5 32.5 13.096 32.5 20C32.5 26.904 26.904 32.5 20 32.5C13.096 32.5 7.5 26.904 7.5 20C7.5 13.096 13.096 7.5 20 7.5Z" fill="#0A2342"/>
+                    <path d="M20 15C17.239 15 15 17.239 15 20C15 22.761 17.239 25 20 25C22.761 25 25 22.761 25 20C25 17.239 22.761 15 20 15Z" fill="#00C9B1"/>
+                </svg>
+                <span class="text-xl font-semibold font-poppins">NovaRyd</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#features" class="hover:text-electric-teal transition-colors">Features</a>
+                <a href="#about" class="hover:text-electric-teal transition-colors">About</a>
+                <a href="#contact" class="hover:text-electric-teal transition-colors">Contact</a>
+            </div>
+            <div>
+                <button class="bg-electric-teal hover:bg-opacity-90 text-white px-4 py-2 rounded-md font-medium transition-colors">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center bg-gradient-to-br from-midnight-blue to-[#1A3352] text-ivory py-16 px-6 md:px-12 lg:px-16">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold font-poppins leading-tight mb-4">
+                    Sustainable Mobility for a Better Tomorrow
+                </h1>
+                <p class="text-lg md:text-xl opacity-90 mb-8 max-w-lg">
+                    NovaRyd is reimagining transportation with eco-friendly solutions that don't compromise on performance or convenience.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-electric-teal hover:bg-opacity-90 text-white px-6 py-3 rounded-md font-medium transition-colors inline-block">
+                        Join the Movement
+                    </a>
+                    <a href="#features" class="border border-electric-teal text-electric-teal hover:bg-electric-teal hover:text-white px-6 py-3 rounded-md font-medium transition-colors inline-block">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center">
+                <!-- Hero Image SVG -->
+                <svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full max-w-md">
+                    <path d="M200 50C144.772 50 100 94.772 100 150C100 205.228 144.772 250 200 250C255.228 250 300 205.228 300 150C300 94.772 255.228 50 200 50Z" fill="#00C9B1" fill-opacity="0.2"/>
+                    <path d="M200 80C161.34 80 130 111.34 130 150C130 188.66 161.34 220 200 220C238.66 220 270 188.66 270 150C270 111.34 238.66 80 200 80Z" stroke="#00C9B1" stroke-width="4"/>
+                    <path d="M150 150L190 180L250 120" stroke="#00C9B1" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M50 200H350" stroke="#0A2342" stroke-width="4" stroke-dasharray="8 8"/>
+                    <circle cx="100" cy="200" r="20" fill="#0A2342"/>
+                    <circle cx="300" cy="200" r="20" fill="#0A2342"/>
+                    <path d="M120 200H280" stroke="#0A2342" stroke-width="4"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-6 md:px-12 lg:px-16 bg-ivory">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold font-poppins mb-4">Why Choose NovaRyd?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Our innovative approach to mobility puts sustainability at the forefront without sacrificing performance or convenience.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="bg-midnight-blue bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <!-- Eco-friendly Icon -->
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4C10.477 4 6 8.477 6 14C6 19.523 10.477 24 16 24C21.523 24 26 19.523 26 14C26 8.477 21.523 4 16 4Z" stroke="#0A2342" stroke-width="2"/>
+                            <path d="M12 14L15 17L20 12" stroke="#00C9B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 24V28" stroke="#0A2342" stroke-width="2"/>
+                            <path d="M10 26H22" stroke="#0A2342" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold font-poppins mb-3">Eco-Friendly Technology</h3>
+                    <p class="text-gray-600">Our vehicles are powered by renewable energy sources, reducing carbon emissions and environmental impact.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="bg-midnight-blue bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <!-- Smart Tech Icon -->
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="10" width="20" height="16" rx="2" stroke="#0A2342" stroke-width="2"/>
+                            <path d="M11 6H21" stroke="#0A2342" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16 6V10" stroke="#0A2342" stroke-width="2"/>
+                            <circle cx="16" cy="18" r="4" fill="#00C9B1"/>
+                            <path d="M10 14H12" stroke="#0A2342" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M10 18H12" stroke="#0A2342" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M10 22H12" stroke="#0A2342" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 14H22" stroke="#0A2342" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 18H22" stroke="#0A2342" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 22H22" stroke="#0A2342" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold font-poppins mb-3">Smart Connectivity</h3>
+                    <p class="text-gray-600">Integrated IoT technology optimizes routes, reduces congestion, and provides real-time data for better mobility decisions.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="bg-midnight-blue bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <!-- Community Icon -->
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="10" r="6" stroke="#0A2342" stroke-width="2"/>
+                            <circle cx="8" cy="22" r="4" stroke="#0A2342" stroke-width="2"/>
+                            <circle cx="24" cy="22" r="4" stroke="#0A2342" stroke-width="2"/>
+                            <path d="M12 22H20" stroke="#00C9B1" stroke-width="2"/>
+                            <path d="M13 13L10 19" stroke="#00C9B1" stroke-width="2"/>
+                            <path d="M19 13L22 19" stroke="#00C9B1" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold font-poppins mb-3">Community-Focused</h3>
+                    <p class="text-gray-600">Our shared mobility solutions strengthen communities while reducing the number of vehicles on the road.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- As Featured In Section -->
+    <section class="py-12 px-6 md:px-12 lg:px-16 bg-gray-50">
+        <div class="container mx-auto">
+            <p class="text-center text-gray-500 font-medium mb-8">AS FEATURED IN</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <!-- Featured Logo 1 -->
+                <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-70 hover:opacity-100 transition-opacity">
+                    <path d="M10 20H30" stroke="#0A2342" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M20 10V30" stroke="#0A2342" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M40 15H110" stroke="#0A2342" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M40 25H90" stroke="#0A2342" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                
+                <!-- Featured Logo 2 -->
+                <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-70 hover:opacity-100 transition-opacity">
+                    <circle cx="20" cy="20" r="10" stroke="#0A2342" stroke-width="2"/>
+                    <path d="M40 15H110" stroke="#0A2342" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M40 25H90" stroke="#0A2342" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                
+                <!-- Featured Logo 3 -->
+                <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-70 hover:opacity-100 transition-opacity">
+                    <rect x="10" y="10" width="20" height="20" rx="2" stroke="#0A2342" stroke-width="2"/>
+                    <path d="M40 15H110" stroke="#0A2342" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M40 25H90" stroke="#0A2342" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                
+                <!-- Featured Logo 4 -->
+                <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-70 hover:opacity-100 transition-opacity">
+                    <path d="M10 20L20 10L30 20L20 30L10 20Z" stroke="#0A2342" stroke-width="2"/>
+                    <path d="M40 15H110" stroke="#0A2342" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M40 25H90" stroke="#0A2342" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-midnight-blue text-ivory py-8 px-6 md:px-12 lg:px-16">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <!-- Logo SVG -->
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-3">
+                            <path d="M20 0C8.954 0 0 8.954 0 20C0 31.046 8.954 40 20 40C31.046 40 40 31.046 40 20C40 8.954 31.046 0 20 0ZM20 7.5C26.904 7.5 32.5 13.096 32.5 20C32.5 26.904 26.904 32.5 20 32.5C13.096 32.5 7.5 26.904 7.5 20C7.5 13.096 13.096 7.5 20 7.5Z" fill="#FCFCF9"/>
+                            <path d="M20 15C17.239 15 15 17.239 15 20C15 22.761 17.239 25 20 25C22.761 25 25 22.761 25 20C25 17.239 22.761 15 20 15Z" fill="#00C9B1"/>
+                        </svg>
+                        <span class="text-xl font-semibold font-poppins">NovaRyd</span>
+                    </div>
+                </div>
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <!-- Social Media Icons -->
+                    <!-- Twitter/X Icon -->
+                    <a href="#" aria-label="Twitter" class="hover:text-electric-teal transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+                            <path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497-3.753C20.18 7.773 21.692 5.25 22 4.009z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <!-- LinkedIn Icon -->
+                    <a href="#" aria-label="LinkedIn" class="hover:text-electric-teal transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="2" y="9" width="4" height="12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="4" cy="4" r="2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <!-- Instagram Icon -->
+                    <a href="#" aria-label="Instagram" class="hover:text-electric-teal transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+                            <rect x="2" y="2" width="20" height="20" rx="5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-sm text-gray-400">
+                <p>&copy; ${new Date().getFullYear()} NovaRyd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
