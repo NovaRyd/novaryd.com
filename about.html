@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | NovaRyd - Clean Mobility for Mumbai</title>
+    <meta name="description" content="Learn about NovaRyd's mission to revolutionize urban transportation in Mumbai with zero-emission electric auto-rickshaws and our commitment to sustainability.">
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'novaryd-green': '#16A34A',
+                        'novaryd-dark-green': '#15803d'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://novaryd.com/about.html">
+    <meta property="og:title" content="About Us | NovaRyd - Clean Mobility for Mumbai">
+    <meta property="og:description" content="Learn about NovaRyd's mission to revolutionize urban transportation in Mumbai with zero-emission electric auto-rickshaws and our commitment to sustainability.">
+    <meta property="og:image" content="/assets/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://novaryd.com/about.html">
+    <meta property="twitter:title" content="About Us | NovaRyd - Clean Mobility for Mumbai">
+    <meta property="twitter:description" content="Learn about NovaRyd's mission to revolutionize urban transportation in Mumbai with zero-emission electric auto-rickshaws and our commitment to sustainability.">
+    <meta property="twitter:image" content="/assets/og-image.jpg">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    
+    <style>
+        html {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-poppins text-slate-800 bg-neutral-100">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center">
+                    <img src="/assets/NovaRyd_Logo.png" alt="NovaRyd Logo" class="h-[40px] w-auto" width="160" height="40">
+                </a>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-slate-800 hover:text-novaryd-green transition duration-300">Home</a>
+                    <a href="about.html" class="text-novaryd-green font-medium transition duration-300">About Us</a>
+                    <a href="index.html#advertisers" class="text-slate-800 hover:text-novaryd-green transition duration-300">Advertisers</a>
+                    <a href="index.html#download-app" class="text-slate-800 hover:text-novaryd-green transition duration-300">Download App</a>
+                </nav>
+                
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-800 hover:text-novaryd-green transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+                <nav class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-slate-800 hover:text-novaryd-green transition duration-300">Home</a>
+                    <a href="about.html" class="text-novaryd-green font-medium transition duration-300">About Us</a>
+                    <a href="index.html#advertisers" class="text-slate-800 hover:text-novaryd-green transition duration-300">Advertisers</a>
+                    <a href="index.html#download-app" class="text-slate-800 hover:text-novaryd-green transition duration-300">Download App</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="py-20 px-6 md:px-16 bg-gradient-to-b from-[#f0fdf4] to-[#dcfce7]">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">About NovaRyd</h1>
+            <p class="text-xl max-w-3xl mx-auto">Revolutionizing urban transportation in Mumbai with zero-emission electric auto-rickshaws.</p>
+        </div>
+    </section>
+    
+    <!-- Our Mission Section -->
+    <section class="py-16 px-6 md:px-16 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+                    <p class="mb-4">NovaRyd is on a mission to transform urban mobility in Mumbai by providing clean, affordable, and efficient transportation options that benefit both the environment and local communities.</p>
+                    <p>We believe that sustainable transportation shouldn't be a luxury but a standard. By electrifying the iconic auto-rickshaw fleet, we're reducing air pollution, creating jobs, and offering a better experience for commuters—all while keeping fares affordable.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-neutral-100 p-8 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-novaryd-green">Our Core Values</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-novaryd-green mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span><strong>Sustainability:</strong> Zero-emission vehicles for a cleaner Mumbai</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-novaryd-green mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span><strong>Accessibility:</strong> Affordable transportation for all</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-novaryd-green mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span><strong>Innovation:</strong> Leveraging technology for better mobility</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-novaryd-green mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span><strong>Community:</strong> Creating jobs and supporting local economies</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Founding Story Section -->
+    <section class="py-16 px-6 md:px-16 bg-neutral-100">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold mb-8 text-center">Our Founding Story</h2>
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <p class="mb-4">NovaRyd was born from a simple observation: Mumbai's iconic auto-rickshaws, while culturally significant and practically useful, contribute significantly to the city's air pollution and offer an inconsistent experience for riders.</p>
+                <p class="mb-4">Our founders, a team of engineers and urban mobility experts, saw an opportunity to preserve this essential mode of transportation while addressing its environmental impact. In 2023, they launched NovaRyd with a fleet of 10 electric auto-rickshaws.</p>
+                <p>The response was overwhelmingly positive. Riders appreciated the fixed fares, clean vehicles, and reliable service. Drivers enjoyed better working conditions and stable income. Advertisers valued the mobile advertising platform. And most importantly, each ride represented a small but meaningful reduction in Mumbai's air pollution.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Team Section -->
+    <section class="py-16 px-6 md:px-16 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold mb-8 text-center">Meet Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-neutral-100 rounded-lg overflow-hidden text-center">
+                    <div class="bg-neutral-200 h-48 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Pavan Jhawar</h3>
+                        <p class="text-gray-600 mb-3">Co-Founder & CEO</p>
+                        <p class="text-sm">Passionate about sustainable urban mobility and creating positive social impact through technology.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="bg-neutral-100 rounded-lg overflow-hidden text-center">
+                    <div class="bg-neutral-200 h-48 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Keshav Jhawar</h3>
+                        <p class="text-gray-600 mb-3">Co-Founder & CTO</p>
+                        <p class="text-sm">Leading the technological innovation behind NovaRyd's electric fleet and mobile application.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="bg-neutral-100 rounded-lg overflow-hidden text-center">
+                    <div class="bg-neutral-200 h-48 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Ananya Sharma</h3>
+                        <p class="text-gray-600 mb-3">Head of Operations</p>
+                        <p class="text-sm">Ensuring smooth day-to-day operations and exceptional service quality across the NovaRyd fleet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Vision Section -->
+    <section class="py-16 px-6 md:px-16 bg-gradient-to-r from-novaryd-green to-novaryd-dark-green text-white">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-bold mb-6">Our Vision for the Future</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">We envision a Mumbai where clean, affordable, and efficient transportation is the norm, not the exception. Where every commuter can breathe cleaner air and enjoy reliable mobility services.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+                    <h3 class="text-xl font-bold mb-3">Expand Our Fleet</h3>
+                    <p>Grow to 500+ electric auto-rickshaws across Mumbai by 2027, serving more neighborhoods and communities.</p>
+                </div>
+                <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+                    <h3 class="text-xl font-bold mb-3">Enhance Technology</h3>
+                    <p>Continuously improve our mobile app and vehicle technology for a seamless rider and driver experience.</p>
+                </div>
+                <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+                    <h3 class="text-xl font-bold mb-3">Expand Services</h3>
+                    <p>Introduce new mobility solutions that complement our core auto-rickshaw service for comprehensive urban transportation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-16 px-6 md:px-16 bg-white">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-bold mb-6">Join the NovaRyd Movement</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Whether you're a rider, driver, advertiser, or investor, there's a place for you in our clean mobility revolution.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html#download-app" class="bg-novaryd-green hover:bg-novaryd-dark-green text-white font-medium py-3 px-6 rounded-lg transition duration-300 text-center">
+                    Download the App
+                </a>
+                <a href="mailto:info@novaryd.com" class="border-2 border-novaryd-green text-novaryd-green hover:bg-novaryd-green hover:text-white font-medium py-3 px-6 rounded-lg transition duration-300 text-center">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-12 px-6 md:px-16 bg-slate-800 text-white">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <!-- Logo in footer -->
+                    <div class="mb-4">
+                        <img src="/assets/NovaRyd_Logo.png" alt="NovaRyd Logo" class="h-[40px] w-auto" width="160" height="40">
+                    </div>
+                    <p class="text-sm text-gray-400">Low-cost, all-electric mobility for a greener Mumbai</p>
+                </div>
+                
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-6 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="flex space-x-4 text-sm text-gray-400">
+                        <a href="about.html" class="hover:text-white transition duration-300">About Us</a>
+                        <a href="privacy-policy.html" class="hover:text-white transition duration-300">Privacy Policy</a>
+                        <a href="terms.html" class="hover:text-white transition duration-300">Terms & Conditions</a>
+                        <a href="mailto:info@novaryd.com" class="hover:text-white transition duration-300">Contact</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2025 NovaRyd Private Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

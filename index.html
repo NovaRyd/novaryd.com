@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaRyd | Electric Auto-Rickshaw Rides & Mobile Advertising</title>
     <meta name="description" content="NovaRyd offers zero-emission auto-rickshaw rides in Mumbai with flat fares and mobile advertising opportunities. Join our clean mobility revolution.">
+    <meta name="keywords" content="electric auto-rickshaw, Mumbai transport, zero-emission rides, mobile advertising, clean mobility, eco-friendly transport">
+    <meta name="author" content="NovaRyd">
+    <link rel="canonical" href="https://novaryd.com/">
+    <meta name="robots" content="index, follow">
     
     <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,6 +71,42 @@
     </style>
 </head>
 <body class="font-poppins text-slate-800 bg-neutral-100">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center">
+                    <img src="/assets/NovaRyd_Logo.png" alt="NovaRyd Logo" class="h-[40px] w-auto" width="160" height="40">
+                </a>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-novaryd-green font-medium transition duration-300">Home</a>
+                    <a href="about.html" class="text-slate-800 hover:text-novaryd-green transition duration-300">About Us</a>
+                    <a href="#advertisers" class="text-slate-800 hover:text-novaryd-green transition duration-300">Advertisers</a>
+                    <a href="#download-app" class="text-slate-800 hover:text-novaryd-green transition duration-300">Download App</a>
+                </nav>
+                
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-800 hover:text-novaryd-green transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+                <nav class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-novaryd-green font-medium transition duration-300">Home</a>
+                    <a href="about.html" class="text-slate-800 hover:text-novaryd-green transition duration-300">About Us</a>
+                    <a href="#advertisers" class="text-slate-800 hover:text-novaryd-green transition duration-300">Advertisers</a>
+                    <a href="#download-app" class="text-slate-800 hover:text-novaryd-green transition duration-300">Download App</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
     <!-- Hero Section -->
     <section id="hero" class="scroll-snap-section flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-12 md:py-0 bg-gradient-to-b from-[#f0fdf4] to-[#dcfce7]">
         <div class="md:w-1/2 mb-10 md:mb-0">
@@ -289,24 +329,18 @@
                 <div class="md:w-1/2 mb-8 md:mb-0">
                     <h2 class="text-3xl font-bold mb-4">Download the NovaRyd App</h2>
                     <p class="mb-6">Experience hassle-free, eco-friendly rides at a flat rate. Available for iOS and Android.</p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#" class="bg-black text-white py-3 px-6 rounded-lg flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M17.5 12.5c0-1.58-.4-3.1-1.17-4.5l4.67-4.67-1.5-1.5-4.67 4.67c-1.4-.77-2.92-1.17-4.5-1.17s-3.1.4-4.5 1.17L1.17 2.33l-1.5 1.5 4.67 4.67c-.77 1.4-1.17 2.92-1.17 4.5s.4 3.1 1.17 4.5l-4.67 4.67 1.5 1.5 4.67-4.67c1.4.77 2.92 1.17 4.5 1.17s3.1-.4 4.5-1.17l4.67 4.67 1.5-1.5-4.67-4.67c.77-1.4 1.17-2.92 1.17-4.5z"/>
-                            </svg>
-                            App Store
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
+                        <a href="#" aria-label="Download on the App Store" class="transition duration-300 hover:opacity-80">
+                            <img src="/assets/appstore.svg" alt="Apple App Store badge" class="h-12 w-auto" width="120" height="40">
                         </a>
-                        <a href="#" class="bg-black text-white py-3 px-6 rounded-lg flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M3.5 20.5v-17l17 8.5-17 8.5z"/>
-                            </svg>
-                            Google Play
+                        <a href="#" aria-label="Get it on Google Play" class="transition duration-300 hover:opacity-80">
+                            <img src="/assets/playstore.svg" alt="Google Play Store badge" class="h-12 w-auto" width="135" height="40">
                         </a>
                     </div>
                 </div>
                 <div class="md:w-1/2 flex justify-center">
                     <div class="bg-neutral-200 rounded-lg w-[200px] h-[400px] flex items-center justify-center">
-                        <img src="/assets/app-screenshot.png" alt="NovaRyd App Screenshot" class="w-full h-full object-cover rounded-lg" width="200" height="400" loading="lazy">
+                        <img src="/assets/App_Screenshot.png" alt="NovaRyd App Screenshot" class="w-full h-full object-cover rounded-lg" width="200" height="400" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -349,12 +383,18 @@
                                 <circle cx="4" cy="4" r="2"></circle>
                             </svg>
                         </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
                     </div>
                     
                     <div class="flex space-x-4 text-sm text-gray-400">
-                        <a href="#" class="hover:text-white transition duration-300">Privacy</a>
-                        <a href="#" class="hover:text-white transition duration-300">Terms</a>
-                        <a href="mailto:keshav.jhawar.5@gmail.com" class="hover:text-white transition duration-300">Careers</a>
+                        <a href="about.html" class="hover:text-white transition duration-300">About Us</a>
+                        <a href="privacy-policy.html" class="hover:text-white transition duration-300">Privacy Policy</a>
+                        <a href="terms.html" class="hover:text-white transition duration-300">Terms & Conditions</a>
+                        <a href="mailto:info@novaryd.com" class="hover:text-white transition duration-300">Contact</a>
                     </div>
                 </div>
             </div>
@@ -364,5 +404,13 @@
             </div>
         </div>
     </footer>
+    
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
