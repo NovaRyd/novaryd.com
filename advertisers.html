@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertise With NovaRyd</title>
+    <meta name="description" content="Turn NovaRyd's electric rickshaw fleet into your mobile billboards. Reach thousands of commuters daily across Mumbai.">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'novaryd-green': '#16A34A',
+                        'novaryd-dark-green': '#15803d'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+
+    <style>
+        html {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-poppins text-slate-800 bg-neutral-100">
+    <!-- Header/Navigation -->
+    <header class="bg-novaryd-green shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-2">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center">
+                    <img src="/assets/NovaRyd_Logo.webp" alt="NovaRyd Logo" class="h-12 w-auto max-w-[220px] filter drop-shadow-sm" width="220" height="48">
+                </a>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-white/80 transition duration-300">Home</a>
+                    <a href="about.html" class="text-white hover:text-white/80 transition duration-300">About Us</a>
+                    <a href="advertisers.html" class="text-white font-medium transition duration-300">Advertisers</a>
+                    <a href="careers.html" class="text-white hover:text-white/80 transition duration-300">Careers</a>
+                    <a href="index.html#download-app" class="text-white hover:text-white/80 transition duration-300">Download App</a>
+                </nav>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none" aria-label="Toggle Menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+                <nav class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-white hover:text-white/80 transition duration-300">Home</a>
+                    <a href="about.html" class="text-white hover:text-white/80 transition duration-300">About Us</a>
+                    <a href="advertisers.html" class="text-white font-medium transition duration-300">Advertisers</a>
+                    <a href="careers.html" class="text-white hover:text-white/80 transition duration-300">Careers</a>
+                    <a href="index.html#download-app" class="text-white hover:text-white/80 transition duration-300">Download App</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Advertisers Section -->
+    <section class="py-16 px-6 md:px-16 bg-white">
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">Advertise With NovaRyd</h1>
+            <p class="text-xl text-center mb-12 max-w-3xl mx-auto">Turn our fleet into your mobile billboards. Reach thousands of commuters daily with high-visibility ad placements.</p>
+            
+            <div class="overflow-x-auto mb-8">
+                <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 bg-gray-100 text-left">Ad Position</th>
+                            <th class="py-3 px-4 bg-gray-100 text-left">Size</th>
+                            <th class="py-3 px-4 bg-gray-100 text-left">Estimated Views</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-t border-gray-200">
+                            <td class="py-3 px-4">Front Panel</td>
+                            <td class="py-3 px-4">60cm × 40cm</td>
+                            <td class="py-3 px-4">50,000+</td>
+                        </tr>
+                        <tr class="border-t border-gray-200 bg-gray-50">
+                            <td class="py-3 px-4">Side Panels (2)</td>
+                            <td class="py-3 px-4">80cm × 50cm</td>
+                            <td class="py-3 px-4">45,000+</td>
+                        </tr>
+                        <tr class="border-t border-gray-200">
+                            <td class="py-3 px-4">Rear Panel</td>
+                            <td class="py-3 px-4">60cm × 40cm</td>
+                            <td class="py-3 px-4">40,000+</td>
+                        </tr>
+                        <tr class="border-t border-gray-200 bg-gray-50">
+                            <td class="py-3 px-4">Interior Panels (4)</td>
+                            <td class="py-3 px-4">30cm × 20cm</td>
+                            <td class="py-3 px-4">15,000+</td>
+                        </tr>
+                        <tr class="border-t border-gray-200">
+                            <td class="py-3 px-4">Digital Display</td>
+                            <td class="py-3 px-4">10" screen</td>
+                            <td class="py-3 px-4">15,000+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="bg-neutral-100 p-6 rounded-lg mb-8">
+                <h3 class="text-xl font-bold mb-4">Why Advertise with NovaRyd?</h3>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Mobile billboards reach diverse audiences across Mumbai</li>
+                    <li>Eco-friendly brand association enhances your corporate image</li>
+                    <li>Enhance brand reputation with CSR</li>
+                    <li>Detailed analytics on routes, exposure, and audience demographics</li>
+                    <li>Flexible contract terms from 1-12 months</li>
+                </ul>
+            </div>
+            
+            <div class="text-center">
+                <a href="/assets/NovaRyd Brochure.pdf" download="NovaRyd_Brochure.pdf" type="application/pdf" class="inline-flex items-center bg-novaryd-green hover:bg-novaryd-dark-green text-white font-medium py-3 px-6 rounded-lg transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+                    </svg>
+                    Download Media Kit
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-novaryd-green text-white py-12 px-6 md:px-16">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between gap-8">
+            <div class="flex flex-col items-center md:items-start">
+                <img src="/assets/NovaRyd_Logo.webp" alt="NovaRyd Logo" class="h-12 w-auto mb-4" width="220" height="48">
+                <p class="text-lg font-medium mb-2">Zero-emission rides for a greener Mumbai</p>
+                <p class="text-sm text-gray-200">Low-cost, all-electric mobility for a greener Mumbai</p>
+            </div>
+            
+            <div class="flex flex-col items-center md:items-end">
+                <div class="flex space-x-6 mb-4">
+                    <!-- Social links omitted for brevity -->
+                </div>
+                
+                <div class="flex space-x-4 text-sm text-gray-200">
+                    <a href="about.html" class="hover:text-white transition duration-300">About Us</a>
+                    <a href="privacy-policy.html" class="hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-white transition duration-300">Terms & Conditions</a>
+                    <a href="mailto:pavan@novaryd.com" class="hover:text-white transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-200">
+            <p>&copy; 2025 NovaRyd Private Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
