@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaRyd Pricing & Fare Policy – Transparent, Upfront Fares</title>
+    <meta name="description" content="See how NovaRyd calculates fares: base fare, per-km rates, GST, and examples. Final price shown before you pay.">
+    <link rel="canonical" href="https://novaryd.com/pricing/">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { 'novaryd-green': '#16A34A', 'novaryd-dark-green': '#15803d' },
+            fontFamily: { 'poppins': ['Poppins','sans-serif'] }
+          }
+        }
+      }
+    </script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+
+    <style>
+      html { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="font-poppins text-slate-800 bg-neutral-100">
+  <!-- Header/Navigation (unchanged: no Pricing in main nav) -->
+  <header class="bg-novaryd-green shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-2">
+      <div class="flex justify-between items-center">
+        <a href="/index.html" class="flex items-center">
+          <img src="/assets/NovaRyd_Logo.webp" alt="NovaRyd Logo" class="h-12 w-auto max-w-[220px] filter drop-shadow-sm" width="220" height="48">
+        </a>
+        <nav class="hidden md:flex space-x-8">
+          <a href="/index.html" class="text-white hover:text-white/80 transition">Home</a>
+          <a href="/about.html" class="text-white hover:text-white/80 transition">About Us</a>
+          <a href="/advertisers.html" class="text-white hover:text-white/80 transition">Advertisers</a>
+          <a href="/careers.html" class="text-white hover:text-white/80 transition">Careers</a>
+          <a href="/index.html#download-app" class="text-white hover:text-white/80 transition">Download App</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-white hover:text-white/80 transition" aria-label="Toggle navigation menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+        <nav class="flex flex-col space-y-4">
+          <a href="/index.html" class="text-white hover:text-white/80 transition">Home</a>
+          <a href="/about.html" class="text-white hover:text-white/80 transition">About Us</a>
+          <a href="/advertisers.html" class="text-white hover:text-white/80 transition">Advertisers</a>
+          <a href="/careers.html" class="text-white hover:text-white/80 transition">Careers</a>
+          <a href="/index.html#download-app" class="text-white hover:text-white/80 transition">Download App</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero (short) -->
+  <section class="py-16 px-6 md:px-16 bg-gradient-to-b from-[#f0fdf4] to-[#dcfce7]">
+    <div class="container mx-auto max-w-4xl text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Transparent, upfront fares</h1>
+      <p class="text-lg md:text-xl">NovaRyd shows you the full price before you confirm. No surprises.</p>
+    </div>
+  </section>
+
+  <!-- How our fares are calculated -->
+  <section class="py-12 px-6 md:px-16 bg-white">
+    <div class="container mx-auto max-w-4xl">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">How our fares are calculated</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li><strong>Base fare:</strong> ₹40 covers up to 1.5 km.</li>
+        <li><strong>After that:</strong> ₹10.28 per km beyond 1.5 km.</li>
+        <li><strong>GST:</strong> 5% added to the ride total at checkout.</li>
+      </ul>
+      <p class="mt-4 text-gray-700">Fares may vary based on distance, time, traffic conditions, and demand. You’ll always see the final price before you pay.</p>
+    </div>
+  </section>
+
+  <!-- Sample fares -->
+  <section class="py-12 px-6 md:px-16 bg-neutral-100">
+    <div class="container mx-auto max-w-4xl">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">Sample fares</h2>
+      <p class="text-sm text-gray-600 mb-4">These are examples. The checkout/booking screen will always show the exact final price before you confirm.</p>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white rounded-lg overflow-hidden">
+          <thead>
+            <tr class="bg-gray-100 text-left">
+              <th class="py-3 px-4">Distance</th>
+              <th class="py-3 px-4">Net Fare (₹)</th>
+              <th class="py-3 px-4">GST 5% (₹)</th>
+              <th class="py-3 px-4">Passenger Total (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="py-3 px-4">1.0 km</td>
+              <td class="py-3 px-4">40.00</td>
+              <td class="py-3 px-4">2.00</td>
+              <td class="py-3 px-4">42.00</td>
+            </tr>
+            <tr class="border-t bg-gray-50">
+              <td class="py-3 px-4">1.5 km</td>
+              <td class="py-3 px-4">40.00</td>
+              <td class="py-3 px-4">2.00</td>
+              <td class="py-3 px-4">42.00</td>
+            </tr>
+            <tr class="border-t">
+              <td class="py-3 px-4">2.0 km</td>
+              <td class="py-3 px-4">45.14</td>
+              <td class="py-3 px-4">2.26</td>
+              <td class="py-3 px-4">47.40</td>
+            </tr>
+            <tr class="border-t bg-gray-50">
+              <td class="py-3 px-4">3.0 km</td>
+              <td class="py-3 px-4">55.42</td>
+              <td class="py-3 px-4">2.77</td>
+              <td class="py-3 px-4">58.19</td>
+            </tr>
+            <tr class="border-t">
+              <td class="py-3 px-4">5.0 km</td>
+              <td class="py-3 px-4">75.98</td>
+              <td class="py-3 px-4">3.80</td>
+              <td class="py-3 px-4">79.78</td>
+            </tr>
+            <tr class="border-t bg-gray-50">
+              <td class="py-3 px-4">10.0 km</td>
+              <td class="py-3 px-4">127.38</td>
+              <td class="py-3 px-4">6.37</td>
+              <td class="py-3 px-4">133.75</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transparency disclaimer -->
+  <section class="py-12 px-6 md:px-16 bg-white">
+    <div class="container mx-auto max-w-4xl">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Transparency</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>You will always see a live fare breakdown (base fare, distance charges, taxes) before confirming.</li>
+        <li>If any surge or additional fees apply, they’ll be itemized on the checkout screen before payment.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Taxes & fees -->
+  <section class="py-12 px-6 md:px-16 bg-neutral-100">
+    <div class="container mx-auto max-w-4xl">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Taxes & fees</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>GST (5%) is applied to the ride total.</li>
+        <li>Any promotional discounts will be shown as a separate line item at checkout.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Links -->
+  <section class="py-12 px-6 md:px-16 bg-white">
+    <div class="container mx-auto max-w-4xl">
+      <h2 class="text-2xl font-bold mb-4">Learn more</h2>
+      <div class="flex flex-wrap gap-4 text-novaryd-green">
+        <a href="/terms.html" class="underline">Terms & Conditions</a>
+        <a href="/refunds/" class="underline">Refund/Cancellation Policy</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 md:px-16 bg-slate-800 text-white">
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <div class="mb-4">
+            <img src="/assets/NovaRyd_Logo.webp" alt="NovaRyd Logo" class="h-12 w-auto max-w-[180px]" width="180" height="48">
+          </div>
+          <p class="text-sm text-gray-400">Low-cost, all-electric mobility for a greener Mumbai</p>
+        </div>
+        <div class="flex flex-col items-center md:items-end">
+          <div class="flex space-x-4 text-sm text-gray-400">
+            <a href="/about.html" class="hover:text-white transition">About Us</a>
+            <a href="/privacy-policy.html" class="hover:text-white transition">Privacy Policy</a>
+            <a href="/terms.html" class="hover:text-white transition">Terms & Conditions</a>
+            <a href="/refunds/" class="hover:text-white transition">Refund/Cancellation</a>
+            <a href="/pricing/" class="hover:text-white transition">Pricing</a>
+            <a href="/delete-account.html" class="hover:text-white transition">Delete Account</a>
+            <a href="mailto:pavan@novaryd.com" class="hover:text-white transition">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+        <p>&copy; 2025 NovaRyd Private Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.getElementById('mobile-menu-button')?.addEventListener('click', () => {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu?.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Developer notes: fare constants -->
+  <script>
+    // Constants for easy updates
+    const FARE_BASE = 40;            // ₹
+    const FARE_BASE_DISTANCE_KM = 1.5; // km
+    const FARE_PER_KM = 10.28;       // ₹ per km after base
+    const GST_RATE = 0.05;           // 5%
+    // Example helper if needed elsewhere
+    function computeFare(distanceKm) {
+      const extraKm = Math.max(0, distanceKm - FARE_BASE_DISTANCE_KM);
+      const net = FARE_BASE + extraKm * FARE_PER_KM;
+      const gst = +(net * GST_RATE).toFixed(2);
+      const total = +(net + gst).toFixed(2);
+      return { net: +net.toFixed(2), gst, total };
+    }
+    window.NOVARYD_FARES = { FARE_BASE, FARE_BASE_DISTANCE_KM, FARE_PER_KM, GST_RATE, computeFare };
+  </script>
+</body>
+</html>

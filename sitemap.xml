@@ -25,6 +25,18 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://novaryd.com/pricing/</loc>
+    <lastmod>2025-09-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://novaryd.com/refunds/</loc>
+    <lastmod>2025-09-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://novaryd.com/delete-account.html</loc>
     <lastmod>2025-09-23</lastmod>
     <changefreq>yearly</changefreq>

@@ -92,6 +92,19 @@
                 
                 <p class="text-xl mb-8">Our mobile application is currently under development. Please check back soon to download the NovaRyd app for booking your electric auto-rickshaw rides.</p>
                 
+                <!-- Inline Fare Breakdown (placeholder) -->
+                <div class="text-left bg-neutral-50 border border-gray-200 rounded-xl p-5 mb-8">
+                  <h2 class="text-lg font-semibold mb-3">Fare breakdown</h2>
+                  <ul class="text-sm space-y-2">
+                    <li><strong>Base fare</strong> (covers up to 1.5 km): ₹40</li>
+                    <li><strong>Distance charge</strong> (after 1.5 km): ₹10.28/km × [km beyond 1.5]</li>
+                    <li class="pt-2 flex items-center justify-between"><span>Subtotal</span><span>₹[subtotal]</span></li>
+                    <li class="flex items-center justify-between"><span>GST (5%)</span><span>₹[gst]</span></li>
+                    <li class="font-semibold flex items-center justify-between"><span>Total due now</span><span>₹[total]</span></li>
+                  </ul>
+                  <p class="text-xs text-gray-600 mt-3">You’ll see the final price before you pay. By confirming, you agree to our <a href="/terms.html" class="underline">Terms & Conditions</a> and <a href="/refunds/" class="underline">Refund/Cancellation Policy</a>.</p>
+                </div>
+ 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="index.html" class="bg-novaryd-green hover:bg-novaryd-dark-green text-white font-medium py-3 px-6 rounded-lg transition duration-300 text-center">
                         Return to Homepage
@@ -137,8 +150,10 @@
                         </a>
                     </div>
                     
-                    <div class="flex space-x-4 text-sm text-gray-400">
+                    <div class="flex space-x-4 text-sm text-gray-200">
                         <a href="about.html" class="hover:text-white transition duration-300">About Us</a>
+                        <a href="/pricing/" class="hover:text-white transition duration-300">Pricing</a>
+                        <a href="/refunds/" class="hover:text-white transition duration-300">Refund/Cancellation</a>
                         <a href="privacy-policy.html" class="hover:text-white transition duration-300">Privacy Policy</a>
                         <a href="terms.html" class="hover:text-white transition duration-300">Terms & Conditions</a>
                         <a href="delete-account.html" class="hover:text-white transition duration-300">Delete Account</a>

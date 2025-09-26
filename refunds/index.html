@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refund & Cancellation Policy | NovaRyd</title>
+  <meta name="description" content="NovaRyd's refund and cancellation policy: clear rules, timelines, and any applicable fees. Final price and any charges are shown before you pay.">
+  <link rel="canonical" href="https://novaryd.com/refunds/">
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { 'novaryd-green': '#16A34A', 'novaryd-dark-green': '#15803d' },
+          fontFamily: { 'poppins': ['Poppins','sans-serif'] }
+        }
+      }
+    }
+  </script>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
+
+  <style>
+    html { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="font-poppins text-slate-800 bg-neutral-100">
+  <!-- Header/Navigation (no header link for refunds) -->
+  <header class="bg-novaryd-green shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-2">
+      <div class="flex justify-between items-center">
+        <a href="/index.html" class="flex items-center">
+          <img src="/assets/NovaRyd_Logo.webp" alt="NovaRyd Logo" class="h-12 w-auto max-w-[220px] filter drop-shadow-sm" width="220" height="48">
+        </a>
+        <nav class="hidden md:flex space-x-8">
+          <a href="/index.html" class="text-white hover:text-white/80 transition">Home</a>
+          <a href="/about.html" class="text-white hover:text-white/80 transition">About Us</a>
+          <a href="/advertisers.html" class="text-white hover:text-white/80 transition">Advertisers</a>
+          <a href="/careers.html" class="text-white hover:text-white/80 transition">Careers</a>
+          <a href="/index.html#download-app" class="text-white hover:text-white/80 transition">Download App</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-white hover:text-white/80 transition" aria-label="Toggle navigation menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+        <nav class="flex flex-col space-y-4">
+          <a href="/index.html" class="text-white hover:text-white/80 transition">Home</a>
+          <a href="/about.html" class="text-white hover:text-white/80 transition">About Us</a>
+          <a href="/advertisers.html" class="text-white hover:text-white/80 transition">Advertisers</a>
+          <a href="/careers.html" class="text-white hover:text-white/80 transition">Careers</a>
+          <a href="/index.html#download-app" class="text-white hover:text-white/80 transition">Download App</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Refund/Cancellation Content -->
+  <section class="py-16 px-6 md:px-16 bg-white">
+    <div class="container mx-auto max-w-4xl">
+      <h1 class="text-3xl md:text-4xl font-bold mb-6">Refund & Cancellation Policy</h1>
+      <p class="text-sm text-gray-500 mb-8">Last updated: September 26, 2025</p>
+
+      <div class="space-y-8">
+        <div>
+          <h2 class="text-2xl font-bold mb-3">1. Cancellations</h2>
+          <ul class="list-disc list-inside space-y-2">
+            <li>You may cancel a booking any time before a driver reaches your pickup location.</li>
+            <li>Cancellations after a driver has been assigned may incur a clearly disclosed cancellation fee (shown before you confirm).</li>
+            <li>If applicable, any cancellation fee will be itemized on the checkout or confirmation screen.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-bold mb-3">2. Refunds</h2>
+          <ul class="list-disc list-inside space-y-2">
+            <li>If you are charged incorrectly due to a technical error or a verified service failure, you may request a refund within 7 days.</li>
+            <li>Approved refunds are typically processed to the original payment method within 5–7 business days.</li>
+            <li>For partial rides or disputes, our support team will review GPS logs and driver/rider reports to determine eligibility.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-bold mb-3">3. Fees and Disclosures</h2>
+          <ul class="list-disc list-inside space-y-2">
+            <li>All applicable charges including base fare, distance charges, GST, and any adjustments (e.g., surge or cancellation fee) are shown before payment.</li>
+            <li>GST at 5% is applied to the ride total.</li>
+            <li>Promotional discounts, when applicable, appear as a separate line item before you pay.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-bold mb-3">4. How to Request a Refund</h2>
+          <p class="mb-3">Email our support team from your registered email address with your ride details (date, time, pickup/drop locations):</p>
+          <p class="mb-1"><a class="text-novaryd-green underline" href="mailto:support@novaryd.com?subject=Refund%20Request">support@novaryd.com</a></p>
+          <p class="text-sm text-gray-600">We usually respond within 3–5 business days.</p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-bold mb-3">5. Related Policies</h2>
+          <div class="flex flex-wrap gap-4 text-novaryd-green">
+            <a href="/pricing/" class="underline">Pricing & Fare Policy</a>
+            <a href="/terms.html" class="underline">Terms & Conditions</a>
+            <a href="/privacy-policy.html" class="underline">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 md:px-16 bg-slate-800 text-white">
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <div class="mb-4">
+            <img src="/assets/NovaRyd_Logo.webp" alt="NovaRyd Logo" class="h-12 w-auto max-w-[180px]" width="180" height="48">
+          </div>
+          <p class="text-sm text-gray-400">Low-cost, all-electric mobility for a greener Mumbai</p>
+        </div>
+        <div class="flex flex-col items-center md:items-end">
+          <div class="flex space-x-4 text-sm text-gray-400">
+            <a href="/about.html" class="hover:text-white transition">About Us</a>
+            <a href="/privacy-policy.html" class="hover:text-white transition">Privacy Policy</a>
+            <a href="/terms.html" class="hover:text-white transition">Terms & Conditions</a>
+            <a href="/refunds/" class="hover:text-white transition">Refund/Cancellation</a>
+            <a href="/pricing/" class="hover:text-white transition">Pricing</a>
+            <a href="/delete-account.html" class="hover:text-white transition">Delete Account</a>
+            <a href="mailto:pavan@novaryd.com" class="hover:text-white transition">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+        <p>&copy; 2025 NovaRyd Private Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.getElementById('mobile-menu-button')?.addEventListener('click', () => {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu?.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
