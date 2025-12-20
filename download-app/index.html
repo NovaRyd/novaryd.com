@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download NovaRyd App</title>
+    
+    <!-- Meta refresh redirect (fallback) -->
+    <meta http-equiv="refresh" content="0;url=https://novaryd.com" id="meta-refresh">
+    
+    <script>
+        (function() {
+            // Store URLs
+            const APP_STORE_URL = "https://apps.apple.com/us/app/novaryd/id6752864065";
+            const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.novaryd.novaryd";
+            const FALLBACK_URL = "https://novaryd.com";
+            
+            // Get current query string (preserve it)
+            const currentQuery = window.location.search;
+            
+            // User-agent detection
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            
+            // Check for iOS (iPhone, iPad, iPod)
+            const isIOS = /iPhone|iPad|iPod/i.test(userAgent);
+            
+            // Check for iPadOS on Mac (iPadOS 13+ can identify as Mac)
+            const isIPadOS = /Macintosh/i.test(userAgent) && navigator.maxTouchPoints && navigator.maxTouchPoints > 1;
+            
+            // Check for Android
+            const isAndroid = /Android/i.test(userAgent);
+            
+            // Determine destination URL
+            let destinationUrl;
+            
+            if (isIOS || isIPadOS) {
+                // iOS takes priority
+                destinationUrl = APP_STORE_URL;
+            } else if (isAndroid) {
+                destinationUrl = PLAY_STORE_URL;
+            } else {
+                destinationUrl = FALLBACK_URL;
+            }
+            
+            // Append query parameters safely
+            let finalUrl = destinationUrl;
+            if (currentQuery) {
+                // Check if destination already has query parameters
+                const separator = destinationUrl.includes('?') ? '&' : '?';
+                finalUrl = destinationUrl + separator + currentQuery.substring(1); // Remove leading '?'
+            }
+            
+            // Update meta refresh tag to point to final URL
+            const metaRefresh = document.getElementById('meta-refresh');
+            if (metaRefresh) {
+                metaRefresh.setAttribute('content', '0;url=' + finalUrl);
+            }
+            
+            // JavaScript redirect (primary method)
+            // Use replace() to avoid adding to history
+            window.location.replace(finalUrl);
+        })();
+    </script>
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #16A34A 0%, #15803d 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 24px;
+            opacity: 0.9;
+        }
+        a {
+            color: white;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+        a:hover {
+            opacity: 0.8;
+        }
+        .spinner {
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top: 3px solid white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="spinner"></div>
+        <h1>Redirecting...</h1>
+        <p>You will be redirected to download the NovaRyd app.</p>
+        <p>If you are not redirected automatically, <a href="https://novaryd.com" id="fallback-link">click here</a>.</p>
+    </div>
+    
+    <script>
+        // Update fallback link with correct destination and query params
+        (function() {
+            const APP_STORE_URL = "https://apps.apple.com/us/app/novaryd/id6752864065";
+            const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.novaryd.novaryd";
+            const FALLBACK_URL = "https://novaryd.com";
+            
+            const currentQuery = window.location.search;
+            const fallbackLink = document.getElementById('fallback-link');
+            
+            if (fallbackLink) {
+                const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+                const isIOS = /iPhone|iPad|iPod/i.test(userAgent);
+                const isIPadOS = /Macintosh/i.test(userAgent) && navigator.maxTouchPoints && navigator.maxTouchPoints > 1;
+                const isAndroid = /Android/i.test(userAgent);
+                
+                let destinationUrl;
+                if (isIOS || isIPadOS) {
+                    destinationUrl = APP_STORE_URL;
+                } else if (isAndroid) {
+                    destinationUrl = PLAY_STORE_URL;
+                } else {
+                    destinationUrl = FALLBACK_URL;
+                }
+                
+                // Append query params safely
+                let finalUrl = destinationUrl;
+                if (currentQuery) {
+                    const separator = destinationUrl.includes('?') ? '&' : '?';
+                    finalUrl = destinationUrl + separator + currentQuery.substring(1);
+                }
+                
+                fallbackLink.href = finalUrl;
+            }
+        })();
+    </script>
+</body>
+</html>
+
